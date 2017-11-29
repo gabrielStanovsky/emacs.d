@@ -163,6 +163,22 @@
   (add-hook 'after-init-hook (lambda () (require 'uptimes))))
 
 
+;;----------------------------------------------------------------------------
+;; Try to handle annoying annaconda completion
+;;----------------------------------------------------------------------------
+(remove-hook 'anaconda-mode-response-read-fail-hook
+             'anaconda-mode-show-unreadable-response)
+
+;;----------------------------------------------------------------------------
+;; Try to add flyspell automatically to latex mode
+;;----------------------------------------------------------------------------
+(defun turn-on-flyspell () (flyspell-mode 1))
+
+(add-hook 'python-mode-hook 'flyspell-prog-mode)
+(add-hook 'plain-tex-mode-hook 'turn-on-flyspell)
+
+
+
 (provide 'init)
 
 ;; Local Variables:

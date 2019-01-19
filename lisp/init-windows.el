@@ -1,3 +1,13 @@
+;;; init-windows.el --- Working with windows within frames -*- lexical-binding: t -*-
+;;; Commentary:
+
+;; This is not about the "Windows" OS, but rather Emacs's "windows"
+;; concept: these are the panels within an Emacs frame which contain
+;; buffers.
+
+;;; Code:
+
+
 ;;----------------------------------------------------------------------------
 ;; Navigate window layouts with "C-c <left>" and "C-c <right>"
 ;;----------------------------------------------------------------------------
@@ -103,3 +113,4 @@ Call a second time to restore the original window configuration."
 (global-set-key (kbd "C-c <down>")  'windmove-down)
 
 (provide 'init-windows)
+;;; init-windows.el ends here

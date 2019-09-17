@@ -1,6 +1,19 @@
 [![Build Status](https://travis-ci.org/purcell/emacs.d.png?branch=master)](https://travis-ci.org/purcell/emacs.d)
 <a href="https://www.patreon.com/sanityinc"><img alt="Support me" src="https://img.shields.io/badge/Support%20Me-%F0%9F%92%97-ff69b4.svg"></a>
 
+
+# Setting up a new environment w/o root
+
+* Fish:    
+  * https://gist.githubusercontent.com/masih/10277869/raw/ca325530de5672eff55c253c93a2ec8332cb89d6/fish_shell_local_install.sh
+
+* Emacs:
+  * [Download tarball](http://mirror.clarkson.edu/gnu/emacs/)
+  
+  * `./configure --prefix=$HOME/emacs --bindir=$HOME/bin --with-x-toolkit=no --with-xpm=no --with-jpeg=no --with-gif=no --with-tiff=no --with-gnutls=no`
+  * `make; make install`
+
+
 # A reasonable Emacs config
 
 This is my emacs configuration tree, continually used and tweaked
